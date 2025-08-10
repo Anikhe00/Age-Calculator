@@ -9,48 +9,52 @@
 <body>
   <main class="main-container">
     <div class="calculator-container">
-      <form class="calculator-form">
+      <form class="calculator-form" id="calculator-form">
         <div class="input-container">
           <div class="inputs">
-            <label for="day">Day</label>
-            <input type="number" placeholder="DD" id="day" name="day" min="1" max="31">
+            <label for="day" id="day-label">Day</label>
+            <input type="number" placeholder="DD" id="day" name="day">
+            <p class="error-text hide" id="day-error-text">This field is required</p>
           </div>
   
           <div class="inputs">
-            <label for="month">Month</label>
-            <input type="number" placeholder="MM" id="month" name="month" min="1" max="12">
+            <label for="month" id="month-label">Month</label>
+            <input type="number" placeholder="MM" id="month" name="month">
+            <p class="error-text hide" id="month-error-text">This field is required</p>
           </div>
   
           <div class="inputs">
-            <label for="year">Year</label>
-            <input type="number" placeholder="YYYY" id="year" name="year" min="1900" max="2025">
+            <label for="year" id="year-label">Year</label>
+            <input type="number" placeholder="YYYY" id="year" name="year">
+            <p class="error-text hide" id="year-error-text">This field is required</p>
           </div>
         </div>
        
         <div class="line-and-button">
           <hr class="line">
           <button type="submit"><img class="arrow" src="assets/Arrow.svg" alt="Arrow"></button>
+          <hr class="line mobile">
         </div>
         
       </form>
       <div class="result-container">
         <div class="years">
           <p>
-            <span>- -</span>
+            <span id="year-result">- -</span>
             years
           </p>
         </div>
 
         <div class="months">
           <p>
-            <span>- -</span>
+            <span id="month-result">- -</span>
             months
           </p>
         </div>
 
         <div class="days">
           <p>
-            <span>- -</span>
+            <span id="day-result">- -</span>
             days
           </p>
         </div>
@@ -58,5 +62,7 @@
     </section>
   </main>
   
+
+  <script src="script.js"></script>
 </body>
 </html>
