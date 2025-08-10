@@ -11,11 +11,6 @@ const dayErrorText = document.getElementById("day-error-text")
 const monthErrorText = document.getElementById("month-error-text")
 const yearErrorText = document.getElementById("year-error-text")
 
-// Debug: Check if elements are found
-console.log("Day error text element:", dayErrorText);
-console.log("Month error text element:", monthErrorText);
-console.log("Year error text element:", yearErrorText);
-
 const today = new Date();
 
 
@@ -114,6 +109,7 @@ function calculateAge(day, month, year) {
   
   // Handle negative days 
   if (days < 0) {
+    
     // Get the last day of the previous month
     const lastMonth = new Date(currentYear, currentMonth - 1, 0);
     days += lastMonth.getDate();
