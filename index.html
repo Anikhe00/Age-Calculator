@@ -8,6 +8,7 @@
 </head>
 <body>
   <main class="main-container">
+
     <div class="calculator-container">
       <form class="calculator-form" id="calculator-form">
         <div class="input-container">
@@ -32,34 +33,36 @@
        
         <div class="line-and-button">
           <hr class="line">
-          <button type="submit"><img class="arrow" src="assets/Arrow.svg" alt="Arrow"></button>
+          <button type="submit"><img class="arrow" src="assets/Arrow.svg" alt="Arrow" aria-hidden="true"> <span class="sr-only">Submit form</span></button>
           <hr class="line mobile">
         </div>
         
       </form>
       <div class="result-container">
         <div class="years">
-          <p>
+          <h1>
             <span id="year-result">- -</span>
             years
-          </p>
+          </h1>
         </div>
 
         <div class="months">
-          <p>
+          <h1>
             <span id="month-result">- -</span>
             months
-          </p>
+          </h1>
         </div>
 
         <div class="days">
-          <p>
+          <h1>
             <span id="day-result">- -</span>
             days
-          </p>
+          </h1>
         </div>
       </div>
-    </section>
+    </div>
+
+    <p class="footer">Made with ❤️ by <a target="_blank" href="https://github.com/Anikhe00"> Shakirat</a></p>
   </main>
   
 
